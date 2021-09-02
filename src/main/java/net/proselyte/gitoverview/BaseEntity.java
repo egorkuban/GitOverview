@@ -17,7 +17,12 @@ public class BaseEntity {
                 "id=" + id +
                 '}';
     }
-    public boolean isNew(){
+
+    public boolean isNew() {
         return (this.id == null);
+    }
+
+    public BaseEntity(Long id) {
+        this.id = id;
     }
 }
